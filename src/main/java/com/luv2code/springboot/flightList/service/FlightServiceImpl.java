@@ -21,6 +21,10 @@ public class FlightServiceImpl implements FlightService {
 	}
 
 	@Override
+	public List<Flight> getByDepartureAndArrival(String departure,String arrival) {
+		return flightRepo.findByDepartureAndArrival(departure,arrival);
+	}
+	@Override
 	public List<Flight> getAllFlights() {
 		return flightRepo.findAll();
 	}

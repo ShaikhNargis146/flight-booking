@@ -15,9 +15,13 @@ public class Flight {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="id")
 	private Integer id;
+	@Column(name = "departure")
 	private String departure;
+	@Column(name = "arrival")
 	private String arrival;
+	@Column(name = "departure_date")
 	private LocalDateTime departureDate;
+	@Column(name = "arrival_date")
 	private LocalDateTime arrivalDate;
 	
 //	@ManyToMany(mappedBy = "flights", fetch = FetchType.LAZY)
@@ -83,3 +87,8 @@ public class Flight {
 	}
 
 }
+
+
+
+
+

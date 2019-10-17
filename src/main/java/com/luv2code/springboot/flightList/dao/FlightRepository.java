@@ -10,5 +10,5 @@ import java.util.List;
 @Transactional
 public interface FlightRepository extends JpaRepository<Flight, Integer> {
 	
-	List<Flight> findByDepartureAndDepartureDateGreaterThan(String departure, LocalDateTime departureDate);
+	List<Flight> findByDepartureAndArrival(String departure, String arrival);
 }

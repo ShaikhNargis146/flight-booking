@@ -9,7 +9,10 @@ public interface FlightService {
 	
 	Flight getFlightById(int flightId);
 
+	List<Flight> getByDepartureAndArrival(String departure, String arrival);
+
 	List<Flight> getAllFlights();
+
 	public void save(Flight flight);
 
 }

@@ -21,14 +21,14 @@ public class FlightController {
 	@GetMapping
 	public @ResponseBody
     List<Flight> getAllFlights() {
+		System.out.println("getAllFlights-------");
 		return flightService.getAllFlights();
 	}
-
-
-	@PostMapping
-	public Flight addEmployee(@RequestBody Flight flight) {
-		flightService.save(flight);
-		return flight;
+	@GetMapping("/{src}/{dest}")
+	public @ResponseBody
+	List<Flight> getByDepartureAndArrival(@PathVariable String src,@PathVariable  String dest) {
+		System.out.println("getAllFlights-------");
+		return flightService.getByDepartureAndArrival(src, dest);
 	}
 
 	@GetMapping("/{flight-id}")
