@@ -1,4 +1,4 @@
-package com.luv2code.springboot.flightList.system;
+package com.microservice.springboot.flightList.exception;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

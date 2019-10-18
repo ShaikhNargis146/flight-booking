@@ -1,4 +1,4 @@
-package com.luv2code.springboot.flightList.system;
+package com.microservice.springboot.flightList.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
 	

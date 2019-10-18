@@ -1,4 +1,4 @@
-package com.luv2code.springboot.flightList.entity;
+package com.microservice.springboot.flightList.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -23,7 +23,8 @@ public class Flight {
 	private LocalDateTime departureDate;
 	@Column(name = "arrival_date")
 	private LocalDateTime arrivalDate;
-	
+	@Column(name = "flight_number")
+	private String flightNumber;
 //	@ManyToMany(mappedBy = "flights", fetch = FetchType.LAZY)
 //	private Set<FlightBooking> bookings;
 
@@ -31,14 +32,7 @@ public class Flight {
 		super();
 	}
 
-	public Flight(int id, String departure, String arrival, LocalDateTime departureDate, LocalDateTime arrivalDate) {
-		super();
-		this.id = id;
-		this.departure = departure;
-		this.arrival = arrival;
-		this.departureDate = departureDate;
-		this.arrivalDate = arrivalDate;
-	}
+
 
 	public int getId() {
 		return id;
@@ -50,6 +44,15 @@ public class Flight {
 
 	public String getDeparture() {
 		return departure;
+	}
+
+	public Flight(Integer id, String departure, String arrival, LocalDateTime departureDate, LocalDateTime arrivalDate, String flightNumber) {
+		this.id = id;
+		this.departure = departure;
+		this.arrival = arrival;
+		this.departureDate = departureDate;
+		this.arrivalDate = arrivalDate;
+		this.flightNumber = flightNumber;
 	}
 
 	public void setDeparture(String departure) {
@@ -80,12 +83,25 @@ public class Flight {
 		this.arrivalDate = arrivalDate;
 	}
 
-	@Override
-	public String toString() {
-		return "Flight [id=" + id + ", departure=" + departure + ", arrival=" + arrival + ", departureDate="
-				+ departureDate + ", arrivalDate=" + arrivalDate + "]";
+	public String getFlightNumber() {
+		return flightNumber;
 	}
 
+	public void setFlightNumber(String flightNumber) {
+		this.flightNumber = flightNumber;
+	}
+
+	@Override
+	public String toString() {
+		return "Flight{" +
+				"id=" + id +
+				", departure='" + departure + '\'' +
+				", arrival='" + arrival + '\'' +
+				", departureDate=" + departureDate +
+				", arrivalDate=" + arrivalDate +
+				", flightNumber='" + flightNumber + '\'' +
+				'}';
+	}
 }
 
 

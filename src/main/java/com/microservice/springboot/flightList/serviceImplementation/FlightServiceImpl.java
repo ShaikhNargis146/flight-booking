@@ -1,7 +1,9 @@
-package com.luv2code.springboot.flightList.service;
+package com.microservice.springboot.flightList.serviceImplementation;
 
-import com.luv2code.springboot.flightList.dao.FlightRepository;
-import com.luv2code.springboot.flightList.entity.Flight;
+import com.microservice.springboot.flightList.dao.FlightRepository;
+import com.microservice.springboot.flightList.entity.Flight;
+import com.microservice.springboot.flightList.service.FlightNotFoundException;
+import com.microservice.springboot.flightList.service.FlightService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

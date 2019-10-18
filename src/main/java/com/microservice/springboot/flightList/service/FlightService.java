@@ -1,7 +1,7 @@
-package com.luv2code.springboot.flightList.service;
+package com.microservice.springboot.flightList.service;
 
 
-import com.luv2code.springboot.flightList.entity.Flight;
+import com.microservice.springboot.flightList.entity.Flight;
 
 import java.util.List;
 

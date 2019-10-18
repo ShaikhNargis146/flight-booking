@@ -1,7 +1,7 @@
-package com.luv2code.springboot.flightList.rest;
+package com.microservice.springboot.flightList.controller;
 
-import com.luv2code.springboot.flightList.entity.Flight;
-import com.luv2code.springboot.flightList.service.FlightService;
+import com.microservice.springboot.flightList.entity.Flight;
+import com.microservice.springboot.flightList.service.FlightService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

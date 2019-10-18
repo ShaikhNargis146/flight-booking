@@ -1,7 +1,7 @@
-package com.luv2code.springboot.flightList.service;
+package com.microservice.springboot.flightList.service;
 
 
-import com.luv2code.springboot.flightList.system.ResourceNotFoundException;
+import com.microservice.springboot.flightList.exception.ResourceNotFoundException;
 
 public class FlightNotFoundException extends ResourceNotFoundException {
 

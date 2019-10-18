@@ -1,4 +1,4 @@
-package com.luv2code.springboot.flightList;
+package com.microservice.springboot.flightList;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
